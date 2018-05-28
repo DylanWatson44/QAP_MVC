@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Testing QAP</h1>
+    <p class="lead">Who knows how many bugs this will produce</p>
+</div>
+
+
+@*<div style="display:inline-block;max-height:150px;max-width:200px" class="qlik-embed" data-qlik-objid="RnMrR" data-qlik-appid="f83dfb3d-9fd0-43af-b360-95a5fd813e7c"></div>
+<div style="display:inline-block;max-height:150px;max-width:200px" class="qlik-embed" data-qlik-objid="ARnaj" data-qlik-appid="f83dfb3d-9fd0-43af-b360-95a5fd813e7c"></div>
+<div style="display:inline-block;max-height:150px;max-width:200px" class="qlik-embed" data-qlik-objid="VFbs" data-qlik-appid="f83dfb3d-9fd0-43af-b360-95a5fd813e7c"></div>*@
+<style>
+    .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+</style>
+<div class="row">
+    
+    <div class="lui-buttongroup">
+        <button id="BackBtn" class="lui-button">
+            Back
+        </button>
+        <button id="ForBtn" class="lui-button">
+            Forward
+        </button>
+        <button id="ClearBtn" class="lui-button">
+            Clear selections
+        </button>
+    </div>
+    <div  class="flex-container clearfix" style=" display: flex;">
+        <div id="QV01" style="width:70%; min-height:400px"></div>
+        <div class="animate-show-hide" ng-hide="$(mySelect).length<=1">
+            <label for="mySelect">Pick a year</label>
+            <select id="mySelect" class="lui-select">
+            </select>
+        </div>
+    </div>
+    <div  class="col-md-12">
+        
+        <h2 id="element">Volume Commitment</h2>
+    </div>
+</div>
+
+<div id="someID" style="width:100%;height:450px;" class="qlik-embed hover" data-qlik-objid="PgJXGg" data-qlik-appid="f83dfb3d-9fd0-43af-b360-95a5fd813e7c"></div>
+<div class="qlik-embed" style="width:100%;height:100px" data-qlik-objid="jbmzmMj" data-qlik-appid="6665189e-b0c0-47d9-b6e9-79176421c033"></div>
+
+<div class="qlik-embed" style="width:100%;height:200px" data-qlik-objid="nPrNdbP" data-qlik-appid="6665189e-b0c0-47d9-b6e9-79176421c033"></div>
+@Scripts.Render("~/bundles/showGraph")
+
+
+
+
