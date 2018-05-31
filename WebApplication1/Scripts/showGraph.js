@@ -2,7 +2,6 @@
     app = qlikApps['f83dfb3d-9fd0-43af-b360-95a5fd813e7c'];
     app.getObject("someID", "PgJXGg", {
         noSelections: true
-       // noInteraction: true
     })
     //    .then(function (model) {   
     //    var mytable = qlik.table(model)
@@ -20,14 +19,16 @@
     app.visualization.get('PgJXGg').then(function (vis) {
         vis.setOptions({ title: "Now improved" });
         vis.setOptions({ orientation: "vertical" });
-                 //vis.setOptions({
-                //    legend: {
-                //        show: true,
-                //        dock: "left",
-                //        showTitle: true
-                //    }
-                //})
-    });      
+
+    });
+    //vis.setOptions({
+    //    legend: {
+    //        show: true,
+    //        dock: "left",
+    //        showTitle: true
+    //    }
+    //})
+
         app.visualization.get('RnMrR').then(function (filter) {
             filter.setOptions({
                 subtitle: "Select a year:",
@@ -72,18 +73,6 @@
                     }
                 ]
             }
-            //,
-            //{"qDef": {
-            //        "qDef": "=Avg([LatestDollarsCommitment])",
-            //        "qLabel": "Latest Dollars Commitment"
-            //          },
-            //    "qAttributeExpressions": [
-            //            { "qExpression": "RGB(153,255,102)",
-            //                "id": "colorByExpression"
-            //            }
-            //    ]
-
-            //    }
             ],
             {
                 title: "Great on-the-fly Graph",

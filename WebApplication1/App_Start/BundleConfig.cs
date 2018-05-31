@@ -30,8 +30,6 @@ namespace WebApplication1
                 "~/Scripts/apiTest.js"));
             bundles.Add(new ScriptBundle("~/bundles/showGraph").Include(
                 "~/Scripts/showGraph.js"));
-            bundles.Add(new ScriptBundle("~/bundles/qsocks").Include(
-                "~/Scripts/qsocks.bundle.js"));
             bundles.Add(new ScriptBundle("~/bundles/double").Include(
                 "~/Scripts/doubleGraph.js"));
         }
